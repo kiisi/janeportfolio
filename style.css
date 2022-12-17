@@ -150,6 +150,11 @@ a{
         display:none;
     }
 }
+@media screen and (max-width:425px){
+    .mobile-navigation.effect{
+        max-width:100%;
+    }
+}
 
 
 /* Header */
