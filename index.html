@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Jane</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="max-wrapper navigation">
+      <div class="navigation__title">Jane Ohia</div>
+      <div class="navigation__links">
+        <a class="navigation__links--link"><span>About Me</span></a>
+        <a class="navigation__links--link"><span>Work</span></a>
+        <a class="navigation__links--link"><span>Contact Me</span></a>
+        <a
+          class="navigation__links--link"
+          href="assets/Ohia Jane Chidera CV.pdf_.pdf"
+          download
+          ><span>Resume</span></a
+        >
+      </div>
+      <div class="navigation__hamburger">
+        <span class="material-icons">menu</span>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+
+    <nav class="mobile-navigation">
+      <header>
+        <div class="mobile-navigation__title">Jane Ohia</div>
+        <span class="material-icons">close</span>
+      </header>
+      <div class="mobile-navigation__links">
+        <a class="mobile-navigation__links--link"><span>About Me</span></a>
+        <a class="mobile-navigation__links--link"><span>Work</span></a>
+        <a class="mobile-navigation__links--link"><span>Contact Me</span></a>
+        <a
+          class="mobile-navigation__links--link"
+          href="assets/Ohia Jane Chidera CV.pdf_.pdf"
+          download
+          ><span>Resume</span></a
+        >
+      </div>
+    </nav>
+
+    <div class="mobile-navigation__backdrop"></div>
+
+    <!-- Header -->
+
+    <header class="max-wrapper header">
+      <div class="max-wrapper__content">
+        <div class="header__subtitle">
+          You only have one chance to make a first impression, Let's make it an
+          amazing one
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me -->
+
+    <div class="max-wrapper">
+      <div class="max-wrapper__content component">
+        <div class="component__title">
+          About <br />
+          Me
+        </div>
+        <div class="component__content">
+          I am Jane Chidera Ohia, a software developer and a UX/UI Designer. 2
+          years of actively using HTML, CSS, Bootstrap, Tailwind CSS, Vanilla
+          JavaScript, and React. JS, and C# to build responsive, robust, and
+          interactive websites. <br /><br />
+          Used problem-solving aptitude to enhance application performance.
+          Created data visualization tools and integrated designs. Increased
+          speed of product lifecycle and 100% of the time delivered projects
+          within deadline. 2 years of Research, sketching, wire-framing, and
+          prototyping, Conducting and managing customer research, usability
+          studies, Designing mockups and high-fidelity user interfaces, and
+          Improving the user experience, and overall functionality of new
+          existing features, have helped me set distinct standards for user
+          needs, interactions and requirements as a UX/UI Designer.
+        </div>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <div class="max-wrapper work">
+      <div class="max-wrapper__content component">
+        <div class="component__title">Work</div>
+        <div class="component__content">
+          <div class="work__img">
+            <img src="./assets/trisum.PNG" alt="trisum" />
+            <div class="work__img--caption">Triisum</div>
+          </div>
+          <div class="work__sub">
+            <div class="work__sub-img">
+              <img src="./assets/pwc.PNG" alt="PWC" />
+              <div class="work__sub-img--caption">PWC</div>
+            </div>
+            <div class="work__sub-img">
+              <img src="./assets/mercif.PNG" alt="Mercif" />
+              <div class="work__sub-img--caption">Mercif</div>
+            </div>
+          </div>
+          <div class="work__sub">
+            <div class="work__sub-img">
+              <img src="./assets/curency.PNG" alt="Currency Converter" />
+              <div class="work__sub-img--caption">Currency Converter</div>
+            </div>
+            <div class="work__sub-img">
+              <img src="./assets/portfolio.PNG" alt="Portfolio" />
+              <div class="work__sub-img--caption">Portfolio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="max-wrapper contact-me">
+      <div class="max-wrapper__content component">
+        <div class="component__title">
+          Contact <br />
+          Me
+        </div>
+        <div class="component__content">
+          <a href="tel:09055016590" class="contact-me__connect"
+            ><span>09055016590</span></a
+          >
+          <a class="contact-me__connect" href="mailto:janechidera12@gmail.com"
+            ><span>janechidera12@gmail.com</span></a
+          >
+          <a class="contact-me__connect" href="https://github.com/OhiaJanny"
+            ><span>Github</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script>
+
+const menu = document.querySelector(".navigation__hamburger span")
+const close = document.querySelector(".mobile-navigation header span")
+const mobileNavigation = document.querySelector(".mobile-navigation");
+const mobileNavigationBackdrop = document.querySelector(".mobile-navigation__backdrop")
+
+menu.addEventListener("click",()=>{
+  mobileNavigation.classList.add("effect")
+  mobileNavigationBackdrop.classList.add("effect")
+})
+close.addEventListener("click",()=>{
+  mobileNavigation.classList.remove("effect")
+  mobileNavigationBackdrop.classList.remove("effect")
+})
+
+</script>
+
+</html>
