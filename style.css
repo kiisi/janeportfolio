@@ -289,7 +289,9 @@ Component style
 }
 
 /* Contact Me */
-
+.contact-me{
+    padding-bottom: 2rem;
+}
 .contact-me .component__content{
     display:flex;
     flex-wrap:wrap;
@@ -304,6 +306,9 @@ Component style
     text-decoration:none;
     color:#4C5C75;
     font-weight: 500;
+}
+.contact-me .component__content .contact-me__connect{
+    margin-bottom: 1rem;
 }
 .contact-me .component__content .contact-me__connect:not(:last-child){
     margin-right: 1rem;
