@@ -96,26 +96,26 @@
       <div class="max-wrapper__content component">
         <div class="component__title">Work</div>
         <div class="component__content">
-          <div class="work__img">
+          <div class="work__img" onclick=urlTriisum()>
             <img src="./assets/trisum.PNG" alt="trisum" />
             <div class="work__img--caption">Triisum</div>
           </div>
           <div class="work__sub">
-            <div class="work__sub-img">
+            <div class="work__sub-img" onClick=urlPwc()>
               <img src="./assets/pwc.PNG" alt="PWC" />
               <div class="work__sub-img--caption">PWC</div>
             </div>
-            <div class="work__sub-img">
+            <div class="work__sub-img" onClick=urlMercif()>
               <img src="./assets/mercif.PNG" alt="Mercif" />
               <div class="work__sub-img--caption">Mercif</div>
             </div>
           </div>
           <div class="work__sub">
-            <div class="work__sub-img">
+            <div class="work__sub-img" onClick=urlCurrencyConverter()>
               <img src="./assets/curency.PNG" alt="Currency Converter" />
               <div class="work__sub-img--caption">Currency Converter</div>
             </div>
-            <div class="work__sub-img">
+            <div class="work__sub-img" onClick=urlPortfolio()>
               <img src="./assets/portfolio.PNG" alt="Portfolio" />
               <div class="work__sub-img--caption">Portfolio</div>
             </div>
@@ -161,6 +161,23 @@ close.addEventListener("click",()=>{
   mobileNavigation.classList.remove("effect")
   mobileNavigationBackdrop.classList.remove("effect")
 })
+
+const urlTriisum = () =>{
+  window.open("https://triisum.com/", "_blank")
+}
+const urlPwc = () =>{
+  window.open("https://codehokage1.github.io/web1/index.html", "_blank")
+}
+const urlMercif = () =>{
+  window.open("https://www.mercif.com/", "_blank")
+}
+const urlCurrencyConverter = () =>{
+  window.open("https://currencyconverter-sand.vercel.app/", "_blank")
+}
+const urlPortfolio = () =>{
+  window.open("https://ohiajanny.github.io/", "_blank")
+}
+
 
 </script>
 
