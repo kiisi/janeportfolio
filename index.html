@@ -17,9 +17,9 @@
     <nav class="max-wrapper navigation">
       <div class="navigation__title">Jane Ohia</div>
       <div class="navigation__links">
-        <a class="navigation__links--link"><span>About Me</span></a>
-        <a class="navigation__links--link"><span>Work</span></a>
-        <a class="navigation__links--link"><span>Contact Me</span></a>
+        <a class="navigation__links--link" href="#about"><span>About Me</span></a>
+        <a class="navigation__links--link" href="#work"><span>Work</span></a>
+        <a class="navigation__links--link" href="#contact"><span>Contact Me</span></a>
         <a
           class="navigation__links--link"
           href="assets/Ohia Jane Chidera CV.pdf_.pdf"
@@ -40,9 +40,9 @@
         <span class="material-icons">close</span>
       </header>
       <div class="mobile-navigation__links">
-        <a class="mobile-navigation__links--link"><span>About Me</span></a>
-        <a class="mobile-navigation__links--link"><span>Work</span></a>
-        <a class="mobile-navigation__links--link"><span>Contact Me</span></a>
+        <a class="mobile-navigation__links--link" href="#about"><span>About Me</span></a>
+        <a class="mobile-navigation__links--link" href="#work"><span>Work</span></a>
+        <a class="mobile-navigation__links--link" href="#contact"><span>Contact Me</span></a>
         <a
           class="mobile-navigation__links--link"
           href="assets/Ohia Jane Chidera CV.pdf_.pdf"
@@ -67,7 +67,7 @@
 
     <!-- About Me -->
 
-    <div class="max-wrapper">
+    <div class="max-wrapper" id="about">
       <div class="max-wrapper__content component">
         <div class="component__title">
           About <br />
@@ -92,7 +92,7 @@
     </div>
 
     <!-- Work -->
-    <div class="max-wrapper work">
+    <div class="max-wrapper work" id="work">
       <div class="max-wrapper__content component">
         <div class="component__title">Work</div>
         <div class="component__content">
@@ -125,7 +125,7 @@
     </div>
 
     <!-- Contact Me -->
-    <div class="max-wrapper contact-me">
+    <div class="max-wrapper contact-me" id="contact">
       <div class="max-wrapper__content component">
         <div class="component__title">
           Contact <br />
@@ -152,6 +152,7 @@ const menu = document.querySelector(".navigation__hamburger span")
 const close = document.querySelector(".mobile-navigation header span")
 const mobileNavigation = document.querySelector(".mobile-navigation");
 const mobileNavigationBackdrop = document.querySelector(".mobile-navigation__backdrop")
+const mobileLinks = document.querySelectorAll(".mobile-navigation__links--link")
 
 menu.addEventListener("click",()=>{
   mobileNavigation.classList.add("effect")
@@ -161,6 +162,17 @@ close.addEventListener("click",()=>{
   mobileNavigation.classList.remove("effect")
   mobileNavigationBackdrop.classList.remove("effect")
 })
+mobileNavigationBackdrop.addEventListener("click", ()=>{
+  mobileNavigation.classList.remove("effect")
+  mobileNavigationBackdrop.classList.remove("effect")
+})
+mobileLinks.forEach(links=>{
+  links.addEventListener("click", ()=>{
+    mobileNavigation.classList.remove("effect")
+    mobileNavigationBackdrop.classList.remove("effect")
+  })
+})
+
 
 const urlTriisum = () =>{
   window.open("https://triisum.com/", "_blank")
